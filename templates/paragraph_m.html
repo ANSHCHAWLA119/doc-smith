@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+  
+
+  <!-- main page -->
+  <div class="main-body">
+    <div class="form-section">
+      <div class="form-title">
+        <label for="name">Main Paragraph</label>
+      </div>
+      <form method="post">
+      <grammarly-editor-plugin>
+        <textarea id="textarea" rows="10" cols="30" name="p_m" placeholder="eg:- Describe Your Main Paragraph here" required></textarea>
+      </grammarly-editor-plugin>
+      <div>
+        <button id="btn-a">Next</button>
+      </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@grammarly/editor-sdk?clientId=client_NgS9UD1m15ZyjkwWQXUfW6"></script>
+{% endblock %}
+  
